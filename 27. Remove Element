@@ -1,0 +1,19 @@
+/*
+Runtime: 156 ms, faster than 91.05% of Kotlin online submissions for Remove Element.
+Memory Usage: 34.9 MB, less than 67.84% of Kotlin online submissions for Remove Element.
+Next challenges:
+*/
+
+class Solution {
+    fun removeElement(nums: IntArray, `val`: Int): Int {
+
+        var res =0
+        for(i in 0..nums.size-1){
+             if (nums[i] != `val`) {
+                nums[res++] = nums[i]
+            }
+        }
+
+        return res
+    }
+}
