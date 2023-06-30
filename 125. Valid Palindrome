@@ -1,0 +1,31 @@
+class Solution {
+    fun isPalindrome(s: String): Boolean {
+        var st : String =""
+
+        
+        for(str in s){
+            if(str.isLetterOrDigit()){
+                st+=str
+            }
+        }
+        
+
+        st=st.toLowerCase()
+        
+        if(st.isNullOrBlank()){
+            return true
+        }
+            
+        
+        var len =st.length-1 //2
+        val half= st.length/2 //1
+        
+        for(i in 0.. half){ //0,1
+            if(st[i]!=st[len--]){   //0,1 vs 2,1
+                return false
+            }
+        }
+        
+        return true
+    }
+}
