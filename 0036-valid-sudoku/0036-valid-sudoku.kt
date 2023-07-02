@@ -41,7 +41,6 @@ class Solution {
             for(j in c until c+3){
                 if(b[i][j]!='.'){
                     var num = Character.getNumericValue(b[i][j])
-                    print(num)
                     if(check[num]){
                         return false 
                     }else{
