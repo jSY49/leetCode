@@ -9,7 +9,6 @@ class Solution {
         
         for(i in 3 .. n){
             dp[i]=(dp[i-1]+dp[i-2])
-            println("${dp[i]} = ${dp[i-1]} + ${dp[i-2]}")
         }
     
         return dp[n]
