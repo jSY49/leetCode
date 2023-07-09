@@ -26,7 +26,7 @@ class Solution {
             tmp = tmp.next;
         }
         
-        tmp.next = list1==null? list2:list1;    //마지막 하나 남은거 위해
+        tmp.next = list1==null? list2:list1;    //마지막 남은거 위해
         return head.next;
     }
 }
