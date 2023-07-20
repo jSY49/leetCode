@@ -4,8 +4,7 @@ class Solution {
         int max = 0;
         
         for(char ch : n.toCharArray()){
-            int num = ch-'0';
-            max= Math.max(max,num);
+            max= Math.max(max,ch-'0');
         }
         
         return max;
